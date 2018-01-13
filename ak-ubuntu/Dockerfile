@@ -9,6 +9,7 @@ RUN apt-get update || apt-get update \
     build-essential \
     curl \
     git \
+    zip \
     software-properties-common \
     python-software-properties \
   && curl -sL https://deb.nodesource.com/setup_9.x -o nodesource_setup.sh \

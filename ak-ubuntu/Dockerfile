@@ -3,6 +3,7 @@ FROM ubuntu:16.04
 LABEL maintainer "Appknox <engineering@appknox.com>"
 
 ENV GOSU_VERSION 1.10
+ENV LANG en_US.UTF-8
 
 RUN apt-get update -y || apt-get update -y \
   && DEBIAN_FRONTEND=noninteractive apt-get install -y \
@@ -13,6 +14,7 @@ RUN apt-get update -y || apt-get update -y \
     software-properties-common \
     python-software-properties \
     fonts-noto-cjk \
+    language-pack-en \
   && curl -sL https://deb.nodesource.com/setup_9.x -o nodesource_setup.sh \
   && bash nodesource_setup.sh \
   && add-apt-repository ppa:nginx/development -y \

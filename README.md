@@ -1,13 +1,13 @@
 # Docker Files
 
 
-### ak-ubuntu
-`appknox/ak-ubuntu` ([Docker Hub](https://hub.docker.com/r/appknox/ak-ubuntu/))
+### ak-ubuntu 
+`https://quay.io/repository/appknox/ak-ubuntu` [![Docker Repository on Quay](https://quay.io/repository/appknox/ak-ubuntu/status "Docker Repository on Quay")](https://quay.io/repository/appknox/ak-ubuntu)
 
->Base: `Ubuntu 16.04`
+>Base: `Ubuntu 18.04`
 >- PPAs added: 
->   - Python 3.6 (deadsnakes)
->   - Node 9.3 (nodesource)
+>   - Node 10.x (nodesource)
 >   - nginx (development)
+>   - postgres (stable)
 >- packages installed:
 >   - gosu

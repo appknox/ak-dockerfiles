@@ -6,7 +6,7 @@
 
 >Base: `Ubuntu 18.04`
 >- PPAs added: 
->   - Node 10.x (nodesource)
+>   - Node 12.x (nodesource)
 >   - nginx (development)
 >   - postgres (stable)
 >- packages installed:

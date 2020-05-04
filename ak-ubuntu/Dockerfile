@@ -1,8 +1,8 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
 LABEL maintainer "Appknox <engineering@appknox.com>"
 
-ENV GOSU_VERSION 1.11
+ENV GOSU_VERSION 1.12
 ENV LANG en_US.UTF-8
 
 RUN apt-get update -y \
@@ -18,9 +18,11 @@ RUN apt-get update -y \
     fonts-noto-cjk \
     language-pack-en \
     iputils-ping \
-  && curl -sL https://deb.nodesource.com/setup_12.x -o nodesource_setup.sh \
+    tmux \
+    dnsutils \
+  && curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh \
   && bash nodesource_setup.sh \
-  && add-apt-repository ppa:nginx/development -y \
+  # && add-apt-repository ppa:nginx/stable -y \
   && curl -s https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add - \
   && sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list' \
   && apt-get update -y \

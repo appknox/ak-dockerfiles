@@ -4,10 +4,10 @@
 ### ak-ubuntu 
 `https://quay.io/repository/appknox/ak-ubuntu` [![Docker Repository on Quay](https://quay.io/repository/appknox/ak-ubuntu/status "Docker Repository on Quay")](https://quay.io/repository/appknox/ak-ubuntu)
 
->Base: `Ubuntu 18.04`
+>Base: `Ubuntu 20.04`
 >- PPAs added: 
->   - Node 12.x (nodesource)
->   - nginx (development)
+>   - Node 14.x (nodesource)
+>   - nginx (stable)
 >   - postgres (stable)
 >- packages installed:
 >   - gosu

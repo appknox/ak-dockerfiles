@@ -20,6 +20,7 @@ RUN apt-get update -y \
     iputils-ping \
     tmux \
     dnsutils \
+    unzip \
   && curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh \
   && bash nodesource_setup.sh \
   # && add-apt-repository ppa:nginx/stable -y \

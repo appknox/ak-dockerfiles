@@ -8,11 +8,9 @@ quay: [https://quay.io/repository/appknox/ak-ubuntu](https://quay.io/repository/
 
 ghcr: [https://ghcr.io/appknox/ak-ubuntu](https://ghcr.io/appknox/ak-ubuntu).
 
-> Base: `Ubuntu 20.04`
+> Base: `Ubuntu 24.04`
 >
 > -   PPAs added:
->     -   Node 14.x (nodesource)
->     -   nginx (stable)
 >     -   postgres (stable)
 > -   packages installed:
 >     -   gosu
